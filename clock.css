@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: wheat;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Digital7';
+    src: url('digital_7/digital-7.ttf') format('truetype');
+  }
+body{
+    background-color: black; 
+}
+img{
+    position: relative;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    border: 5px inset gray;
+    position: relative;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main button{
+    /* position: absolute; */
+    color: whitesmoke;
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    margin: 20px 20px;
+    background-color: rgb(0, 117, 0);
+    border-radius: 2px;
+    border: none;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.664) , -2px -2px 3px rgba(0, 0, 0, 0.664) ;
+    box-shadow:  5px 5px 3px black;
+    
+}
+/* button:hover{
+    transform: scale(0.9);
+    top: 2px;
+    box-shadow: 0 3px 5px black;
+} */
+.btns{
+    margin-top: 170px;
+    background-color: rgba(128, 128, 128, 0.192);
+}
+.main .setTime{
+    display: flex;
+    flex-direction: column;
+    
+}
+.setTime button{
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 0px;
+    background-color:rgba(0, 255, 0, 0.432);
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px black;
+}
+
+#Long24 , #short12{
+   
+}
+.clock{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 120px;
+    text-shadow: 10px -10px 3px black;
+}
+.clock h1{
+    font-size: 80px;
+    color: #00ff00;
+    text-align: center;
+}
+span{
+    color: lime;
+
+}
+.time{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: -600px;
+    font-size: 90px;
+    color: #00ff00;
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.664) , -2px -2px 3px rgba(0, 0, 0, 0.664) ;
+}
+.setTime .setHMS{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.setHMS .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    border: 1px solid gray;
+    padding: 0;
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    overflow: hidden;
+    
+}
+.downH , .upH{
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    text-align: center;
+    margin: 1px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgba(0, 255, 0, 0.224);
+}
+.downM , .upM{
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    text-align: center;
+    margin: 1px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgba(0, 255, 0, 0.276);
+}
+.down:hover{
+    cursor: pointer;
+}
+.up:hover{
+    cursor: pointer;
+}
+.setHMS button{
+    width: 100px;
+    height: inherit;
+    margin-top: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-left: 0px;
+}
+.setTime .setPm{
+    display:flex;
+    flex-direction: row;
+    margin: 30px auto;
+}
+.setPm button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 8px;
+    color: lime;
+    text-align: center;
+}
+
+  
+.clock {
+    font-family: 'Digital7', monospace;
+    font-size: 95px;
+    color: #00ff00; /* رنگ سبز دیجیتال */
+}
+
+@media screen and (max-width: 412px) {
+    
+    img{
+        position: relative;
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+        margin: 25px;
+        
+        position: relative;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .main button{
+        /* position: absolute; */
+        color: whitesmoke;
+        font-size: 15px;
+        width: 120px;
+        height: 25px;
+        margin: 5px 5px;
+        background-color: rgb(0, 117, 0);
+        border-radius: 2px;
+        border: none;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.664) , -2px -2px 3px rgba(0, 0, 0, 0.664) ;
+    }
+    .btns{
+        margin-top: 10px;
+        width: 350px;
+        height: 300px;
+        background-color: rgba(128, 128, 128, 0.239);
+    }
+    .btns #Long24 , #short12{
+        width: 160px;
+        height: 50px;
+       box-shadow: 5px 5px 3px black;
+    }
+    .main .setTime{
+        display: flex;
+        flex-direction: column;
+     
+        margin-top: 20px;
+    }
+    .setTime button{
+        height: 25px;
+        width: 100px;
+        font-size: 15px;
+        border-radius: 0px;
+        background-color:rgba(0, 255, 0, 0.48);
+        border-radius: 5px;
+       
+        margin: 10px 0px 10px 0px;
+    }
+    .setTime .setHMS{
+        display:flex;
+        flex-direction: column;
+        margin-left: 20px;
+        
+    }
+    .setHMS button{
+        width: 150px;
+        height: 50px;
+        margin-top: -20px;
+        border-radius: 0px;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .setHMS .box{
+        border: 1px solid gray;
+        padding: 0 0 0 0;
+        width: 300px;
+        height: 50px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .upH , .downH{
+       
+       font-size: 35px;
+       margin-left: 20px;
+       margin-right: 20px;
+       
+    }
+    .upM , .downM{
+       
+        font-size: 35px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+     }
+    .setTime .setPm{
+        display:flex;
+        flex-direction: row;
+        margin: 5px 5px;
+        margin-top: 20px;
+    }
+    .setPm button{
+        width: 150px;
+        height: 35px;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 5px 10px;
+        box-shadow: 5px 5px 3px black;
+    }
+    #long24 , #long12{
+       
+    }
+    .clock{
+        position: absolute;
+        font-size: 50px;
+        margin-top: -230px;
+        margin-left: 65px;
+        text-shadow: 10px -10px 3px black;
+    }
+    span{
+        color: lime;
+    
+    }
+    .time{
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 0px;
+        font-size: 40px;
+        color: lime;
+        
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.664) , -2px -2px 3px rgba(0, 0, 0, 0.664) ;
+    }
+    h3{
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 8px;
+        color: lime;
+        text-align: center;
+        margin-top: 20px;
+    }
+    @font-face {
+      font-family: 'Digital7';
+      src: url('fonts/digital-7.ttf') format('truetype');
+    }
+    
+    .clock {
+      font-family: 'Digital7', monospace;
+      font-size: 60px;
+      color: #00ff00; /* رنگ سبز دیجیتال */
+    }
+    
+}
