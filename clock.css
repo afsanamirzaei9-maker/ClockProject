@@ -1,4 +1,4 @@
-*{
+max-widthx-width
     padding: 0;
     margin: 0;
     color: wheat;
@@ -171,7 +171,7 @@ h3{
     color: #00ff00; /* رنگ سبز دیجیتال */
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 412px) {
     
     img{
         position: relative;
@@ -320,4 +320,5 @@ h3{
       color: #00ff00; /* رنگ سبز دیجیتال */
     }
     
+
 }
