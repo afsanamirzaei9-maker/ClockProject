@@ -6,7 +6,7 @@ max-widthx-width
 }
 @font-face {
     font-family: 'Digital7';
-    src: url('digital_7/digital-7.ttf') format('truetype');
+    src: url('digital-7.ttf') format('truetype');
   }
 body{
     background-color: black; 
